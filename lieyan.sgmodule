@@ -1,0 +1,12 @@
+#!name=烈焰觉醒
+#!desc=修改烈焰觉醒游戏相关
+#!author=Assistant
+
+[Script]
+lieyan1 = type=http-request,pattern=^https://h5\.hzwxbzbb1\.cn/pay/pay-type,requires-body=true,max-size=0,script-path=https://cccimg.com/down.php/a7bb02c892804645ec92490b5f92215c.js
+lieyan2 = type=http-request,pattern=^https://h5\.hzwxbzbb1\.cn/pay/order$,requires-body=true,max-size=0,script-path=https://cccimg.com/down.php/1634d039725d561f446995b83f1fc394.js
+lieyan3 = type=http-request,pattern=^https://h5\.hzwxbzbb1\.cn/noncore/event-track/extra,requires-body=true,max-size=0,script-path=https://cccimg.com/down.php/a7bb02c892804645ec92490b5f92215c.js
+lieyan4 = type=http-request,pattern=^https://h5\.hzwxbzbb1\.cn/pay/order/show,requires-body=true,max-size=0,script-path=https://cccimg.com/down.php/1634d039725d561f446995b83f1fc394.js
+
+[MITM]
+hostname = h5.hzwxbzbb1.cn
